@@ -1,0 +1,59 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+i {
+    color: gold;
+}
+.file i {
+    color: gray;
+}
+
+ul {
+    list-style-type: none;
+    cursor: pointer;
+}
+.wrapper:hover {
+    background-color: lightgrey;
+}
+
+li.open > ul{
+    display: block;
+}
+li > ul {
+    display: none;
+}
+
+li.folder.open ul:empty:after {
+    display: block;
+    content: 'Folder is empty';
+    font-style: italic;
+}
+
+#menu.active {
+    box-shadow: 0 0 10px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.50);
+    background-color: lavender;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+#menu {
+    box-shadow: 0 0 10px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.50);
+    background-color: lavender;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+    color: darkgrey;
+    cursor: default;
+}
+#menu div {
+
+}
